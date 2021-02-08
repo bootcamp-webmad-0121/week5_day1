@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Hola! {{user.username}}</h1>
+    <hr>
+    <p>Recuerda que passport almacena el usuario logueado en <code>req.user</code></p>
+    <hr>
+
+    {{#if isAdmin}}
+    <a href="/" class="btn btn-danger">Banear usuario</a>
+    {{/if}}
+</div>
